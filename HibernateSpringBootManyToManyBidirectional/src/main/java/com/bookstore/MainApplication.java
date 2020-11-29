@@ -21,6 +21,8 @@ public class MainApplication {
     public ApplicationRunner init() {
         return args -> {
             bookstoreService.insertAuthorsWithBooks();
+            bookstoreService.addSomeMore();
+            bookstoreService.soutAuthorAge38();
         };
     }
 }
